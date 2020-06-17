@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>КНБ</title>
+  <meta charset="utf-8">
+  </meta>
+  <link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+  <div id="text">
+    <div id="player">
+      Выбор игрока:
+      <div id="textChoicePlayer">
+        <div>
+          <button onclick="game (kamen, computerPlay ())" type="button"></button>
+          <button onclick="game (nozh, computerPlay ())" type="button"></button>
+          <button onclick="game (bumaga, computerPlay ())" type="button"></button>
+        </div>
+        <div id="image">
+          <img class="image" src="src/stone.svg">
+          <img class="image" src="src/sewing-scissors.svg">
+          <img class="image" src="src/paper-plane.svg">
+        </div>
+      </div>
+    </div>
+    <div id="result">
+      <div id="textResult"></div>
+      <div id="textScore"></div>
+      <div id="theEnd"></div>
+    </div>
+    <div id="computer">
+      <div id="textChoiceComputer">
+        Выбор соперника:
+      </div>
+      <img id="imageComp">
+    </div>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>

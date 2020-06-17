@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    background: radial-gradient(at center center, rgb(233, 240, 255), rgb(97, 125, 167));
+}
+#text {
+    display: flex;
+    height: 100vh;
+    font-family: Monotype Corsiva;
+    text-align: center;
+}
+#player {
+    display: flex;
+    font-size: 40px;
+    width: 32%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+#image {
+    display: flex;
+    margin-left: 30px;
+}
+.image {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+button {
+    margin: 40px;
+    height: 30px;
+    width: 30px;
+    font-size: 20px;
+    display: inline-block; /* генерирует блочный элемент, который 
+    обтекается другими элементами веб-страницы подобно встроенному элементу. */
+    font-weight: bold; /* жирный шрифт, можно монять жирность */
+    color: #fff; /* цвет текста */
+    text-decoration: none; /* отменяет декор с подчеркиваниями */
+    text-shadow: 0 -1px black; /* тень */
+    user-select: none;
+    /* padding: .7em 1.5em; */
+    border: 1px solid rgb(80,32,0);
+    border-radius: 50%; /* скругление */
+    outline: none;
+    background: rgb(147,80,36) linear-gradient(rgb(106,58,26), rgb(147,80,36) 80%);
+    box-shadow:
+        0 6px rgb(86,38,6),
+        0 3px 15px rgba(0,0,0,.4),
+        inset 0 1px rgba(255,255,255,.3),
+        inset 0 0 3px rgba(255,255,255,.5);
+    transition: .2s;
+}
+button:hover {
+    background: rgb(167,91,41) linear-gradient(rgb(126,69,31), rgb(167,91,41) 80%);
+}
+button:active {
+    background: rgb(120,63,25) linear-gradient(rgb(120,63,25) 20%, rgb(167,91,41));
+    box-shadow:
+     0 2px rgb(86,38,6),
+     0 1px 6px rgba(0,0,0,.4),
+     inset 0 1px rgba(255,255,255,.3),
+     inset 0 0 3px rgba(255,255,255,.5);
+    -webkit-transform: translate(0, 4px);
+    transform: translate(0, 4px);
+}
+#computer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 32%;
+}
+#textChoiceComputer {
+    font-size: 40px;
+}
+img {
+    opacity: 0;
+}   
+img[src] {
+    opacity: 1;
+}
+#imageComp {
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+#result {
+    display: flex;
+    font-size: 50px;
+    width: 36%;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;  
+}
+#theEnd {
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: center;
+    flex-direction: column;
+}
